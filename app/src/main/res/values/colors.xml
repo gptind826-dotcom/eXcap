@@ -1,31 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorTab">#7A5EBC</color>
-    <color name="colorTabText">@android:color/tertiary_text_light</color>
-    <color name="colorTabTextSelected">@android:color/secondary_text_light</color>
-    <color name="colorPrimary">#4527a0</color>
-    <color name="colorPrimaryDark">#4D3294</color>
-    <color name="colorActionBar">#4527a0</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="colorAccentLight">#D8ADBD</color>
-    <color name="colorBackgroundGray">#2C000000</color>
-    <color name="navViewBackground">@color/design_default_color_surface</color>
-    <color name="backgroundColor">@color/background_material_light</color>
-    <color name="drawerItemColor">#404040</color>
-    <color name="statusOpen">#28BC36</color>
-    <color name="statusClosed">#AAAAAA</color>
-    <color name="statusError">#F20015</color>
-    <color name="ok">#0CB350</color>
-    <color name="warning">#FF9800</color>
-    <color name="danger">#F80013</color>
-    <color name="in_progress">#29b6f6</color>
-    <color name="highContrast">#000000</color>
-    <color name="sentPayloadBg">#FBEDED</color>
-    <color name="sentPayloadFg">#7F0000</color>
-    <color name="rcvdPayloadBg">#EDEDFB</color>
-    <color name="rcvdPayloadFg">#00007F</color>
-    <color name="lightGray">#aaa</color>
-    <color name="cardBorder">#e8e8e8</color>
-    <color name="appBadgeBg">#616161</color>
-    <color name="appBadgeText">#FFFFFF</color>
+    <!-- Primary Colors -->
+    <color name="primary">#0D47A1</color>
+    <color name="primary_dark">#072B6A</color>
+    <color name="primary_light">#5472D3</color>
+    <color name="primary_container">#D6E4FF</color>
+    <color name="on_primary_container">#001D36</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#00D4FF</color>
+    <color name="accent_alpha">#3300D4FF</color>
+    <color name="accent_dark">#00A3CC</color>
+    <color name="accent_light">#66E5FF</color>
+
+    <!-- Background Colors -->
+    <color name="background">#0A0E17</color>
+    <color name="surface">#121A2B</color>
+    <color name="surface_variant">#1A243D</color>
+    <color name="card_background">#162036</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8B95A8</color>
+    <color name="text_tertiary">#5A6478</color>
+
+    <!-- Status Colors -->
+    <color name="status_active">#00C853</color>
+    <color name="status_inactive">#FF5252</color>
+    <color name="status_pending">#FFD600</color>
+
+    <!-- Protocol Colors -->
+    <color name="protocol_http">#4CAF50</color>
+    <color name="protocol_https">#2196F3</color>
+    <color name="protocol_tcp">#FF9800</color>
+    <color name="protocol_udp">#9C27B0</color>
+    <color name="protocol_dns">#00BCD4</color>
+    <color name="protocol_other">#757575</color>
+
+    <!-- Traffic Colors -->
+    <color name="upload">#FF6E6E</color>
+    <color name="download">#69F0AE</color>
+
+    <!-- UI Colors -->
+    <color name="error">#FF5252</color>
+    <color name="success">#69F0AE</color>
+    <color name="warning">#FFD600</color>
+    <color name="info">#448AFF</color>
+
+    <!-- Card & Border -->
+    <color name="card_stroke">#1E3050</color>
+    <color name="divider">#1E3050</color>
+    <color name="grid_color">#1E3050</color>
+
+    <!-- Code Background -->
+    <color name="code_background">#0D1117</color>
+
+    <!-- Ripple -->
+    <color name="ripple_color">#1AFFFFFF</color>
 </resources>
