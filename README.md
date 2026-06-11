@@ -2,8 +2,7 @@
 
 **Professional-grade network packet capture tool for Android**
 
-> Built by **eXU CODER** | Rebranded & Redesigned from PCAPdroid
-
+> Built by **eXU CODER** | 
 [![Build eXcap APK](https://github.com/gptind826-dotcom/eXcap/actions/workflows/build-apk.yml/badge.svg)](https://github.com/gptind826-dotcom/eXcap/actions/workflows/build-apk.yml)
 [![Android](https://img.shields.io/badge/Android-26%2B-brightgreen)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0-blue)](https://kotlinlang.org)
@@ -212,12 +211,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 ---
-
-## License
-
-This project is licensed under the GNU General Public License v3.0 - see the [COPYING](COPYING) file for details.
-
-The original PCAPdroid project by Emanuele Faranda is also licensed under GPL v3.0.
 
 ---
 
