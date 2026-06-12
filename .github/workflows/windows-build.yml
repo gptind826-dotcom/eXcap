@@ -7,13 +7,32 @@ jobs:
     runs-on: windows-latest
     if: github.ref != 'refs/heads/playstore'
     steps:
-    - uses: actions/checkout@v4
-      with:
-        submodules: 'recursive'
-        
-    - uses: actions/setup-java@v4
-      with:
-        java-version: '21'
-        distribution: 'temurin'
-        
-    - run: ./gradlew.bat assembleStandardDebug
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Build debug APK
+        run: .\gradlew.bat assembleStandardDebug --no-daemon
+        shell: cmd
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: excap-windows-debug-apk
+          path: app\build\outputs\apk\standard\debug\*.apk
+          retention-days: 14
