@@ -244,7 +244,7 @@ fun AnimatedWaveform(
             val waveRadius = radius * (0.6f + index * 0.15f)
             val strokeWidth = 2f + index * 1.5f
             
-            androidx.compose.ui.graphics.drawscope.drawContext.canvas.nativeCanvas.apply {
+            drawContext.canvas.nativeCanvas.apply {
                 val path = androidx.compose.ui.graphics.Path()
                 
                 for (i in 0..360 step 5) {
