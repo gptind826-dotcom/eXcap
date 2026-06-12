@@ -102,7 +102,7 @@ val bottomNavItems = listOf(Screen.Capture, Screen.Connections, Screen.Stats, Sc
 class ComposeMainActivity : ComponentActivity() {
 
     companion object {
-        private val _appState = MutableStateFlow(AppState.idle)
+        private val _appState = MutableStateFlow(AppState.ready)
         val appStateFlow: StateFlow<AppState> = _appState
 
         private val _connectionCount = MutableStateFlow(0)
@@ -139,11 +139,11 @@ class ComposeMainActivity : ComponentActivity() {
         }
 
         // Register for capture state broadcasts
-        val filter = IntentFilter(CaptureService.ACTION_STATE_CHANGED)
+        val filter = IntentFilter("com.emanuelef.remote_capture.CAPTURE_STATUS_CHANGED")
         LocalBroadcastManager.getInstance(this).registerReceiver(stateReceiver, filter)
 
         // Check initial state
-        _appState.value = CaptureService.getStatus()
+        _appState.value = if (CaptureService.isServiceActive()) CaptureService.ServiceStatus.STARTED else CaptureService.ServiceStatus.STATUS
 
         // Request notification permission on Android 13+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -161,12 +161,12 @@ class ComposeMainActivity : ComponentActivity() {
 
     private val stateReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
-            _appState.value = CaptureService.getStatus()
+            _appState.value = if (CaptureService.isServiceActive()) CaptureService.ServiceStatus.STARTED else CaptureService.ServiceStatus.STATUS
         }
     }
 
     private fun toggleCapture() {
-        when (CaptureService.getStatus()) {
+        when (if (CaptureService.isServiceActive()) CaptureService.ServiceStatus.STARTED else CaptureService.ServiceStatus.STATUS) {
             AppState.running -> {
                 CaptureService.stopService(this)
             }
@@ -192,7 +192,9 @@ class ComposeMainActivity : ComponentActivity() {
     }
 
     private fun startCaptureService() {
-        CaptureService.startService(this, Build.VERSION.SDK_INT)
+        // TODO: start capture via CaptureHelper
+            // CaptureService.startService is not available
+            Utils.showToast(this, "Start capture not yet implemented in Compose UI")
     }
 }
 
