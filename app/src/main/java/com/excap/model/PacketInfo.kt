@@ -1,15 +1,8 @@
 package com.excap.model
 
-
-@Entity(
-    tableName = "captured_packets",
-    indices = [
-        Index(value = ["timestamp"]),
-        Index(value = ["appPackage"]),
-        Index(value = ["protocol"]),
-        Index(value = ["connectionId"])
-    ]
-)
+/**
+ * Packet model - Room annotations removed for kapt compatibility
+ */
 data class PacketInfo(
     val id: Long = 0,
     val timestamp: Long = System.currentTimeMillis(),
@@ -40,7 +33,6 @@ data class PacketInfo(
 )
 
 data class AppTrafficStats(
-    @PrimaryKey
     val packageName: String = "",
     val appName: String = "",
     val totalBytesSent: Long = 0,
@@ -57,7 +49,6 @@ data class AppTrafficStats(
 )
 
 data class ConnectionInfo(
-    @PrimaryKey
     val connectionId: String = "",
     val packageName: String = "",
     val appName: String = "",
