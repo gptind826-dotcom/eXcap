@@ -255,7 +255,7 @@ fun AnimatedWaveform(
                     val x = centerX + (r * cos(angle.toFloat()))
                     val y = centerY + (r * sin(angle.toFloat()))
                     
-                    if (i == 0) {
+                    if (angle_i == 0) {
                         path.moveTo(x, y)
                     } else {
                         path.lineTo(x, y)
