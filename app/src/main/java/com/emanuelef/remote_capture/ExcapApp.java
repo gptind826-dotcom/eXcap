@@ -63,7 +63,7 @@ public class ExcapApp extends Application {
     private boolean mIsDecryptingPcap = false;
     private boolean mIsUsharkAvailable = false;
     private String mLoadedPcapBasename = null;
-    private static WeakReference<eXcap> mInstance;
+    private static WeakReference<ExcapApp> mInstance;
     protected static boolean isUnderTest = false;
 
     @Override
@@ -121,7 +121,7 @@ public class ExcapApp extends Application {
         removeUninstalledAppsFromAppFilter();
     }
 
-    public static @NonNull eXcap getInstance() {
+    public static @NonNull ExcapApp getInstance() {
         return mInstance.get();
     }
 
