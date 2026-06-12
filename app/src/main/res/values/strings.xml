@@ -623,4 +623,6 @@ Built by eXU CODER</string>
     <string name="root_capture_start_failed">Root capture start failed</string>
     <string name="unsupported_pcap_datalink">Unsupported PCAP datalink type</string>
 
+    <string name="ok">OK</string>
+
 </resources>
