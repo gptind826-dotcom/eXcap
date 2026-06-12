@@ -245,15 +245,15 @@ fun AnimatedWaveform(
             val waveRadius = radius * (0.6f + index * 0.15f)
             val strokeWidth = 2f + index * 1.5f
             
-            drawContext.canvas.nativeCanvas.apply {
+            run {
                 val path = androidx.compose.ui.graphics.Path()
                 
-                for (i in 0..360 step 5) {
+                for (angle_i in 0..360 step 5) {
                     val angle = Math.toRadians(i.toDouble())
                     val waveOffset = sin(angle + phase.value + index * 0.5) * (8f + index * 4f)
                     val r = waveRadius + waveOffset.toFloat()
-                    val x = centerX + (r * kotlin.math.cos(angle.toFloat()))
-                    val y = centerY + (r * kotlin.math.sin(angle.toFloat()))
+                    val x = centerX + (r * cos(angle.toFloat()))
+                    val y = centerY + (r * sin(angle.toFloat()))
                     
                     if (i == 0) {
                         path.moveTo(x, y)
