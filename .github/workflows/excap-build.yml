@@ -12,6 +12,7 @@ on:
     branches: [ main, master ]
 
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   GRADLE_OPTS: -Dorg.gradle.jvmargs="-Xmx4g -Dfile.encoding=UTF-8"
   CACHE_VERSION: 1
 
