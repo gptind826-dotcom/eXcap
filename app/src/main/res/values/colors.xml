@@ -57,4 +57,18 @@
 
     <!-- Ripple -->
     <color name="ripple_color">#1AFFFFFF</color>
+
+    <!-- Missing Color Resources for Java Code -->
+    <color name="ok">#00C853</color>
+    <color name="danger">#FF5252</color>
+    <color name="lightGray">#D3D3D3</color>
+    <color name="in_progress">#FFD600</color>
+    <color name="statusOpen">#00C853</color>
+    <color name="statusClosed">#8B95A8</color>
+    <color name="statusError">#FF5252</color>
+    <color name="rcvdPayloadBg">#1B5E20</color>
+    <color name="rcvdPayloadFg">#FFFFFF</color>
+    <color name="sentPayloadBg">#B71C1C</color>
+    <color name="sentPayloadFg">#FFFFFF</color>
+    <color name="eXcap">#0D47A1</color>
 </resources>
