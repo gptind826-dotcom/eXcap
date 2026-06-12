@@ -25,7 +25,6 @@
     <string name="filter">Filter</string>
     <string name="clear">Clear</string>
     <string name="search">Search</string>
-    <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="apply">Apply</string>
     <string name="save">Save</string>
@@ -292,16 +291,12 @@
     <string name="phone_app_info">Phone App Info</string>
     <string name="plus_n">+%1$d</string>
     <string name="raw_bytes">Raw Bytes</string>
-    <string name="rcvdPayloadBg">#1B5E20</string>
-    <string name="rcvdPayloadFg">White</string>
     <string name="rename">Rename</string>
     <string name="request">Request</string>
     <string name="response">Response</string>
     <string name="root_app_info">Root App Info</string>
     <string name="rx_direction">RX</string>
     <string name="save_ok">Saved successfully</string>
-    <string name="sentPayloadBg">#B71C1C</string>
-    <string name="sentPayloadFg">White</string>
     <string name="socks5_proxy">SOCKS5 Proxy</string>
     <string name="status_encrypted">Encrypted</string>
     <string name="status_filter">Status</string>
@@ -433,14 +428,12 @@ Built by eXU CODER</string>
     <string name="country_rules_warning">Country rules require geolocation database</string>
     <string name="ctrl_consent_allowed">Control access allowed for %1$s</string>
     <string name="ctrl_consent_denied">Control access denied for %1$s</string>
-    <string name="danger">Danger</string>
     <string name="disconnect_vpn_confirm">Disconnect active VPN?</string>
     <string name="dump_extensions">PCAP,PCAPNG</string>
     <string name="feature_unavailable">This feature is not available in this build</string>
     <string name="geo_db_missing">Geolocation database is missing</string>
     <string name="get_app">Get App</string>
     <string name="http">HTTP</string>
-    <string name="in_progress">In Progress</string>
     <string name="installation_id">Installation ID: %1$s</string>
     <string name="invalid_license">Invalid license</string>
     <string name="ip_and_port">%1$s:%2$d</string>
@@ -467,9 +460,6 @@ Built by eXU CODER</string>
     <string name="root">Root</string>
     <string name="start_capture_first">Start capture first</string>
     <string name="stats">Statistics</string>
-    <string name="statusClosed">Closed</string>
-    <string name="statusError">Error</string>
-    <string name="statusOpen">Open</string>
     <string name="status_not_loaded">Not loaded</string>
     <string name="status_outdated">Outdated</string>
     <string name="status_updating">Updating...</string>
@@ -518,7 +508,6 @@ Built by eXU CODER</string>
     <string name="item_not_found">Item not found</string>
     <string name="items_delete_confirm">Delete selected items?</string>
     <string name="less_than_one_sec">&lt; 1 sec</string>
-    <string name="lightGray">#D3D3D3</string>
     <string name="malicious_connections">Malicious Connections</string>
     <string name="malicious_connections_notice">Potentially malicious connections detected</string>
     <string name="mitm_addon_error">MITM addon error</string>
@@ -625,7 +614,6 @@ Built by eXU CODER</string>
     <string name="app_unblocked">App unblocked</string>
     <string name="capture_interface_open_error">Failed to open capture interface</string>
     <string name="cert_reinstall_required">Certificate reinstall required</string>
-    <string name="eXcap">eXcap</string>
     <string name="invalid_pcap_file">Invalid PCAP file</string>
     <string name="mitm_doze_notice">MITM may not work in doze mode</string>
     <string name="mitm_start_failed">MITM start failed</string>
