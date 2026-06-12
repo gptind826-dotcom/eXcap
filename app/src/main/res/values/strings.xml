@@ -507,7 +507,7 @@ Built by eXU CODER</string>
     <string name="install_the_mitm_addon">Install MITM addon</string>
     <string name="item_not_found">Item not found</string>
     <string name="items_delete_confirm">Delete selected items?</string>
-    <string name="less_than_one_sec">&lt; 1 sec</string>
+    <string name="less_than_one_sec">Under 1 sec</string>
     <string name="malicious_connections">Malicious Connections</string>
     <string name="malicious_connections_notice">Potentially malicious connections detected</string>
     <string name="mitm_addon_error">MITM addon error</string>
