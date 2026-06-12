@@ -11,11 +11,11 @@ import android.os.Build
 import android.os.ParcelFileDescriptor
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import com.excap.R
+import com.emanuelef.remote_capture.R
 import com.excap.database.AppDatabase
 import com.excap.model.*
 import com.excap.parser.PacketParser
-import com.excap.ui.MainActivity
+import com.emanuelef.remote_capture.activities.MainActivity
 import kotlinx.coroutines.*
 import java.io.FileInputStream
 import java.io.FileOutputStream
