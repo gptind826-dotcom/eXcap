@@ -56,7 +56,7 @@ fun ConnectionsScreen() {
         while (true) {
             val register = CaptureService.getConnsRegister()
             register?.let {
-                connections = it.getAllConnections().toList()
+                connections = (0 until it.connCount).mapNotNull { idx -> it.getConn(idx) }.toList()
             }
             delay(1000)
         }
