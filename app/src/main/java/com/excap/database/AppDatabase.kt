@@ -13,20 +13,14 @@ import com.excap.model.PacketInfo
 
 @Database(
     entities = [
-        PacketInfo::class,
-        AppTrafficStats::class,
-        ConnectionInfo::class,
-        FilterRule::class
+        PacketInfo::class
     ],
     version = 1,
-    exportSchema = true
+    exportSchema = false
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun packetDao(): PacketDao
-    abstract fun appStatsDao(): AppStatsDao
-    abstract fun connectionDao(): ConnectionDao
-    abstract fun filterRuleDao(): FilterRuleDao
 
     companion object {
         @Volatile
